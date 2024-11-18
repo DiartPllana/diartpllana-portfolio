@@ -1,4 +1,8 @@
 import React from "react";
+import HtmlCssSkill from '../assets/skill1.png'
+import JavaScript from '../assets/skill2.png'
+import ReactSkill from '../assets/skill3.png'
+import WordPress from '../assets/skill4.png'
 
 export default function AboutMe() {
   const handleButtonClick = () => {
@@ -60,8 +64,36 @@ export default function AboutMe() {
           </div>
         </div>
         <div className="mySkills">
-          <p></p>
-          <div className="boxSkills"></div>
+          <p>
+            I am passionate about creating engaging digital experiences and
+            enjoy tackling new challenges. When I'm not working, I love
+            exploring new technologies and spending time outdoors.
+          </p>
+          <div className="boxSkills">
+            <div className="skill">
+              <img src={HtmlCssSkill} alt="" />
+              <h3>85%</h3>
+              <span>HTML/CSS</span>
+            </div>
+
+            <div className="skill">
+              <img src={JavaScript} alt="" />
+              <h3>90%</h3>
+              <span>JavaScript</span>
+            </div>
+
+            <div className="skill">
+              <img src={ReactSkill} alt="" />
+              <h3>70%</h3>
+              <span>React</span>
+            </div>
+
+            <div className="skill">
+              <img src={WordPress} alt="" />
+              <h3>30%</h3>
+              <span>WordPress</span>
+            </div>
+          </div>
         </div>
       </div>
     </>
