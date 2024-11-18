@@ -243,3 +243,56 @@
 .skill img{
   width: 60%;
 }
+
+.myResume{
+  padding-top: 70px;
+  padding-bottom: 70px;
+  background-color: #f7f8fe;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: black;
+}
+
+.resumeInfo{
+  width: 80%;
+  margin-top: 50px;
+  display: flex;
+  gap: 50px;
+}
+
+.resumeData{
+  width: 50%;
+  background-color: white;
+  padding: 20px;
+  border-radius: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.eduactionDateInfo{
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  border-left: 4px solid #461ade;
+
+  & span{
+    color: #461ade;
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  & p{
+    color: #a7a7a7;
+  }
+}
+
+.infoAboutEducation{
+  padding: 10px;
+  border: 1px solid #a7a7a7;
+  border-radius: 10px;
+}
