@@ -1,12 +1,15 @@
 import React from "react";
-import HtmlCssSkill from '../assets/skill1.png';
-import JavaScript from '../assets/skill2.png';
-import ReactSkill from '../assets/skill3.png';
-import WordPress from '../assets/skill4.png';
+import HtmlCssSkill from "../assets/skill1.png";
+import JavaScript from "../assets/skill2.png";
+import ReactSkill from "../assets/skill3.png";
+import WordPress from "../assets/skill4.png";
+import Sass from "../assets/skill5.png";
+import GitHub from "../assets/skill6.png"
 
 export default function AboutMe() {
   const handleButtonClick = () => {
-    window.location.href = "https://www.linkedin.com/in/diart-pllana-52627b278/";
+    window.location.href =
+      "https://www.linkedin.com/in/diart-pllana-52627b278/";
   };
 
   return (
@@ -63,15 +66,21 @@ export default function AboutMe() {
       </div>
       <div className="mySkills">
         <p>
-          I am passionate about creating engaging digital experiences and
-          enjoy tackling new challenges. When I'm not working, I love
-          exploring new technologies and spending time outdoors.
+          I am passionate about creating engaging digital experiences and enjoy
+          tackling new challenges. When I'm not working, I love exploring new
+          technologies and spending time outdoors.
         </p>
         <div className="boxSkills">
           <div className="skill">
             <img src={HtmlCssSkill} alt="HTML/CSS" />
             <h3>85%</h3>
             <span>HTML/CSS</span>
+          </div>
+
+          <div className="skill">
+            <img src={Sass} alt="Sass" />
+            <h3>80%</h3>
+            <span>Sass</span>
           </div>
 
           <div className="skill">
@@ -90,6 +99,12 @@ export default function AboutMe() {
             <img src={WordPress} alt="WordPress" />
             <h3>30%</h3>
             <span>WordPress</span>
+          </div>
+
+          <div className="skill">
+            <img src={GitHub} alt="GitHub" />
+            <h3>50%</h3>
+            <span>GitHub</span>
           </div>
         </div>
       </div>

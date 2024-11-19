@@ -1,7 +1,15 @@
 import React from "react";
 import myImage from "../assets/DiartPllana.png";
 
-export default function IntroAboutMe() {
+export default function IntroAboutMe({ scrollToSection }) {
+  const handleLinkClick = (section) => {
+    if (scrollToSection) {
+      scrollToSection(section);
+    } else {
+      console.error("scrollToSection is not defined");
+    }
+  };
+
   return (
     <div className="intro" id="homeSection">
       <div className="aboutMe">
@@ -9,8 +17,22 @@ export default function IntroAboutMe() {
         <h1>Diart Pllana</h1>
         <span className="myJob">Front End Developer</span>
         <div className="buttons">
-          <button className="generalButton">Hire Me!</button>
-          <button className="generalButton">My Work</button>
+          <a href="#aboutMeSection">
+            <button
+              className="generalButton"
+              onClick={() => handleLinkClick("aboutMeSection")}
+            >
+              Hire Me!
+            </button>
+          </a>
+          <a href="#myProject">
+            <button
+              className="generalButton"
+              onClick={() => handleLinkClick("myProject")}
+            >
+              My Work
+            </button>
+          </a>
         </div>
       </div>
       <div className="myImage">

@@ -78,7 +78,7 @@ export default function ContactMe() {
           {errors.name && <p className="error">{errors.name}</p>}
         </div>
         <div>
-          <label htmlFor="email">Email:</label> ```javascript
+          <label htmlFor="email">Email:</label> 
           <input
             type="email"
             id="email"

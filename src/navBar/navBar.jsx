@@ -8,23 +8,29 @@ const Navbar = ({ scrollToSection }) => {
     setIsOpen(!isOpen);
   };
 
+  const handleLinkClick = (section) => {
+    if (isOpen) {
+      setIsOpen(false); 
+    }
+    scrollToSection(section); 
+  };
+
   return (
     <nav className="navbar">
       <div className="navbar-logo">
         <Link to="/"><p>Diart Pllana</p></Link>
       </div>
       <div className={`navbar-links ${isOpen ? 'open' : ''}`}>
-        <Link to="#homeSection" onClick={() => scrollToSection('homeSection')}>Home</Link>
-        <Link to="#aboutMeSection" onClick={() => scrollToSection('aboutMeSection')}>About</Link>
-        <Link to="#myResume" onClick={() => scrollToSection('myResume')}>Resume</Link>
-        <Link to="#myProject" onClick={() => scrollToSection('myProject')}>Projects</Link>
-        <Link to="#contactMe" onClick={() => scrollToSection('contactMe')}>Contact Me</Link>
+        <Link to="#homeSection" onClick={() => handleLinkClick('homeSection')}>Home</Link>
+        <Link to="#aboutMeSection" onClick={() => handleLinkClick('aboutMeSection')}>About</Link>
+        <Link to="#myResume" onClick={() => handleLinkClick('myResume')}>Resume</Link>
+        <Link to="#myProject" onClick={() => handleLinkClick('myProject')}>Projects</Link>
       </div>
       <div className="navbar-login">
-        <Link to="/Login">Login</Link>
+        <Link to="#contactMe" onClick={() => handleLinkClick('contactMe')}>Contact Me</Link>
       </div>
       <div className="burger-menu" onClick={toggleMenu}>
-        <div className ="line"></div>
+        <div className="line"></div>
         <div className="line"></div>
         <div className="line"></div>
       </div>

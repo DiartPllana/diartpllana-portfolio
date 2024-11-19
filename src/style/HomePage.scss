@@ -25,6 +25,9 @@ html {
   .navbar-links {
     display: flex;
     gap: 20px;
+    background-image: url(../assets/backgroundImage.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
 
     a {
       color: white;
@@ -225,11 +228,11 @@ html {
 }
 
 .skill {
-  padding: 10px;
+  padding: 30px;
   border: 1px solid #f7f8fe;
   border-radius: 10px;
   margin-bottom: 20px;
-  width: 45%;
+  width: 20%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -366,7 +369,7 @@ html {
   flex-direction: column;
   align-items: center;
 
-  .error{
+  .error {
     color: red;
   }
 
@@ -447,26 +450,133 @@ footer {
   text-align: center;
 
   .footer-content {
-      p {
-          margin-bottom: 1rem;
-          font-size: 1.2rem;
+    p {
+      margin-bottom: 1rem;
+      font-size: 1.2rem;
+    }
+
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+
+      a {
+        color: #fff;
+        font-size: 2rem;
+        transition: color 0.3s, transform 0.3s;
+
+        &:hover {
+          color: #007bff;
+          transform: scale(1.1);
+        }
       }
+    }
+  }
+}
+@media screen and (max-width: 1020px) {
+  .intro {
+    flex-direction: column;
+    gap: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
 
-      .social-icons {
-          display: flex;
-          justify-content: center;
-          gap: 1.5rem;
+  .aboutMe {
+    width: 100%;
+    align-items: center;
+  }
 
-          a {
-              color: #fff;
-              font-size: 2rem;
-              transition: color 0.3s, transform 0.3s;
+  .myImage {
+    width: 70%;
+    display: flex;
+    justify-content: center;
 
-              &:hover {
-                  color: #007bff;
-                  transform: scale(1.1);
-              }
-          }
-      }
+    & img {
+      width: 60%;
+      height: 400px;
+    }
+  }
+
+  .clientProjects {
+    flex-wrap: wrap;
+  }
+
+  .clientProject {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+ 
+
+  .myImage {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    & img {
+      width: 80%;
+      height: 400px;
+    }
+  }
+
+  .aboutMyData {
+    flex-direction: column;
+    padding-left: 20px;
+  }
+
+  .myData {
+    width: 100%;
+  }
+
+  .tableData {
+    width: 95%;
+  }
+
+  .mySkills {
+    width: 95%;
+  }
+
+  .skill {
+    width: 60%;
+  }
+
+  .resumeInfo {
+    width: 100%;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .resumeData {
+    width: 90%;
+  }
+
+  .clientProjects {
+    width: 100%;
+  }
+
+  .clientProject {
+    width: 90%;
+  }
+
+  .contactMe h1 {
+    width: 90%;
+  }
+
+  .contactMe form {
+    width: 90%;
+  }
+
+  .contactMe form div input,
+  .contactMe form div textarea {
+    width: 95%;
+  }
+
+  .contactMe form button{
+    width: 101%;
+  }
+
+  h1{
+    font-size: 25px;
   }
 }
