@@ -1,4 +1,5 @@
 import AboutMe from "../components/AboutMe.jsx";
+import ContactMe from "../components/ContactMe.jsx";
 import IntroAboutMe from "../components/IntroAboutMe.jsx";
 import MyResume from "../components/MyResume.jsx";
 import Projects from "../components/Projects.jsx";
@@ -12,5 +13,6 @@ export default function HomePage() {
     <AboutMe />
     <MyResume />
     <Projects />
+    <ContactMe />
     </>
 }
