@@ -1,3 +1,4 @@
+import Footer from "../components/Footer.jsx";
 import AboutMe from "../components/AboutMe.jsx";
 import ContactMe from "../components/ContactMe.jsx";
 import IntroAboutMe from "../components/IntroAboutMe.jsx";
@@ -14,5 +15,6 @@ export default function HomePage() {
     <MyResume />
     <Projects />
     <ContactMe />
+    <Footer />
     </>
 }
