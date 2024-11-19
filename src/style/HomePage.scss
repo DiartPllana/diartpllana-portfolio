@@ -177,7 +177,7 @@
   display: flex;
   flex-direction: column;
 
-  & p{
+  & p {
     color: black;
   }
 }
@@ -196,13 +196,13 @@
   background-color: #f7f8fe;
 }
 
-.mySkills{
+.mySkills {
   width: 40%;
   display: flex;
   flex-direction: column;
   gap: 80px;
 
-  & p{
+  & p {
     font-size: 16px;
     line-height: 28px;
     margin: 0;
@@ -210,7 +210,7 @@
   }
 }
 
-.boxSkills{
+.boxSkills {
   padding: 20px;
   border: 3px solid #461ade;
   border-radius: 20px;
@@ -220,7 +220,7 @@
   gap: 10px;
 }
 
-.skill{
+.skill {
   padding: 10px;
   border: 1px solid #f7f8fe;
   border-radius: 10px;
@@ -231,38 +231,42 @@
   justify-content: center;
   align-items: center;
 
-  & h3{
+  & h3 {
     font-weight: 700;
   }
 
-  & span{
+  & span {
     font-weight: 500;
   }
 }
 
-.skill img{
+.skill img {
   width: 60%;
 }
 
-.myResume{
-  padding-top: 70px;
-  padding-bottom: 70px;
+.myResume {
+  padding-top: 100px;
+  padding-bottom: 100px;
   background-color: #f7f8fe;
   margin-top: 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
   color: black;
+
+  & span {
+    font-weight: 500;
+  }
 }
 
-.resumeInfo{
+.resumeInfo {
   width: 80%;
   margin-top: 50px;
   display: flex;
   gap: 50px;
 }
 
-.resumeData{
+.resumeData {
   width: 50%;
   background-color: white;
   padding: 20px;
@@ -273,26 +277,81 @@
   gap: 30px;
 }
 
-.eduactionDateInfo{
+.eduactionDateInfo {
   padding-left: 20px;
   display: flex;
   flex-direction: column;
   gap: 5px;
   border-left: 4px solid #461ade;
 
-  & span{
+  & span {
     color: #461ade;
     font-size: 20px;
     font-weight: 700;
   }
 
-  & p{
+  & p {
     color: #a7a7a7;
   }
 }
 
-.infoAboutEducation{
+.infoAboutEducation {
   padding: 10px;
   border: 1px solid #a7a7a7;
   border-radius: 10px;
+}
+
+.projects {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  gap: 10px;
+
+  & p {
+    text-align: center;
+    width: 60%;
+    text-transform: capitalize;
+    font-weight: 500;
+  }
+
+  & span {
+    font-weight: 700;
+    color: #461ade;
+  }
+}
+
+
+.clientProjects {
+  width: 80%;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 30px;
+}
+
+.clientProject {
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+
+  p {
+    width: 100%;
+    text-align: left;
+  }
+
+  img {
+    width: 100%;
+    height: 400px;
+    max-height: 70%;
+    object-fit: cover;
+  }
 }

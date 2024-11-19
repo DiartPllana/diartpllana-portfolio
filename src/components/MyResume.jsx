@@ -8,18 +8,6 @@ export default function MyResume() {
           <div className="resumeData">
             <h2>Education</h2>
             <div className="eduactionDateInfo">
-              <span>2023 to 2026</span>
-              <p>High School</p>
-              <div className="infoAboutEducation">
-                <h3>Gjimnazi Eqrem Qabej</h3>
-                <p>
-                  Eqrem Qabej High School, located in Vushtrri, Kosovo, is known
-                  for its commitment to providing quality education and
-                  fostering a supportive learning environment for its students.
-                </p>
-              </div>
-            </div>
-            <div className="eduactionDateInfo">
               <span>Present: 2022</span>
               <p>Course</p>
               <div className="infoAboutEducation">
@@ -34,6 +22,19 @@ export default function MyResume() {
                 </p>
               </div>
             </div>
+            <div className="eduactionDateInfo">
+              <span>2023 to 2026</span>
+              <p>High School</p>
+              <div className="infoAboutEducation">
+                <h3>Gjimnazi Eqrem Qabej</h3>
+                <p>
+                  Eqrem Qabej High School, located in Vushtrri, Kosovo, is known
+                  for its commitment to providing quality education and
+                  fostering a supportive learning environment for its students.
+                </p>
+              </div>
+            </div>
+
             <div className="eduactionDateInfo">
               <span>Present: 2024</span>
               <p>Course</p>
@@ -58,7 +59,11 @@ export default function MyResume() {
               <div className="infoAboutEducation">
                 <h3>Umi Code</h3>
                 <p>
-                As a new member of the Umi Code team, I am excited to contribute to our mission of delivering exceptional web and application solutions to our clients. Umi Code is dedicated to transforming ideas into reality by leveraging the latest technologies and design principles.
+                  As a new member of the Umi Code team, I am excited to
+                  contribute to our mission of delivering exceptional web and
+                  application solutions to our clients. Umi Code is dedicated to
+                  transforming ideas into reality by leveraging the latest
+                  technologies and design principles.
                 </p>
               </div>
             </div>
@@ -68,7 +73,11 @@ export default function MyResume() {
               <div className="infoAboutEducation">
                 <h3>Freelancer</h3>
                 <p>
-                As a passionate freelance developer, I specialize in creating customized websites and applications that help businesses thrive in the digital landscape. With a focus on quality, creativity, and client satisfaction, I strive to deliver solutions that not only meet but exceed expectations.
+                  As a passionate freelance developer, I specialize in creating
+                  customized websites and applications that help businesses
+                  thrive in the digital landscape. With a focus on quality,
+                  creativity, and client satisfaction, I strive to deliver
+                  solutions that not only meet but exceed expectations.
                 </p>
               </div>
             </div>
@@ -78,7 +87,13 @@ export default function MyResume() {
               <div className="infoAboutEducation">
                 <h3>Education and Certifications</h3>
                 <p>
-                Since 2022, I have immersed myself in the world of programming, developing a strong foundation and a genuine passion for web development. Over this time, I have mastered key technologies including HTML, CSS, JavaScript, React, WordPress, Git, and GitHub. My journey has equipped me with the skills necessary to build dynamic, responsive, and user-friendly websites and applications.
+                  Since 2022, I have immersed myself in the world of
+                  programming, developing a strong foundation and a genuine
+                  passion for web development. Over this time, I have mastered
+                  key technologies including HTML, CSS, JavaScript, React,
+                  WordPress, Git, and GitHub. My journey has equipped me with
+                  the skills necessary to build dynamic, responsive, and
+                  user-friendly websites and applications.
                 </p>
               </div>
             </div>
